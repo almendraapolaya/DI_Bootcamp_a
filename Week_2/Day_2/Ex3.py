@@ -1,0 +1,59 @@
+# Exercise 3: Dogs Domesticated
+# Goal: Create a PetDog class that inherits from Dog and adds training and tricks.
+
+# Instructions:
+
+# Step 1: Import the Dog Class
+# In a new Python file, import the Dog class from the previous exercise.
+
+# Step 2: Create the PetDog Class
+# Create a class called PetDog that inherits from the Dog class.
+# Add a trained attribute to the __init__ method, with a default value of False.
+# trained means that the dog is trained to do some tricks.
+# Implement a train() method that prints the output of bark() and sets trained to True.
+# Implement a play(*args) method that prints “<dog_names> all play together”.
+# *args on this method is a list of dog instances.
+# Implement a do_a_trick() method that prints a random trick if trained is True.
+# Use this list for the ramdom tricks:
+# tricks = ["does a barrel roll", "stands on his back legs", "shakes your hand", "plays dead"]
+# Choose a random index from it each time the method is called.
+
+# Step 3: Test PetDog Methods
+# Create instances of the PetDog class and test the train(), play(*args), and do_a_trick() methods.
+
+# In a new file
+# import the Dog class
+from Ex2 import Dog
+
+import random
+
+class PetDog(Dog):
+    def __init__(self, name: str, age: int, weight: float, trained = False): 
+        super().__init__(name, age, weight)
+        self.trained = trained
+
+    def train(self):
+        print(self.bark())
+        self.trained = True
+        print(f"{self.bark()}")
+
+    def play(self, *args: Dog):
+        dog_list = [self] + list(args)
+        name_list = [dog.name for dog in dog_list]
+        print(f"{', '.join(name_list)} all play together.")
+
+    def do_a_trick(self): 
+        if self.trained:
+            tricks = ["does a barrel roll", "stands on his back legs", "shakes your hand", "plays dead"]
+            print(f"{self.name} {random.choice(tricks)}")
+
+# Test PetDog methods
+my_dog = PetDog("Fido", 2, 10)
+my_dog_2 = PetDog("Buddy", 7, 27)
+my_dog_3 = PetDog("Max", 9, 20)
+
+my_dog.train()
+my_dog.play(my_dog_2, my_dog_3)
+my_dog.do_a_trick()
+
+
