@@ -15,9 +15,6 @@
 # Step 3: Test Dog Methods
 # Call the bark(), run_speed(), and fight() methods on the dog instances to test their functionality.
 
-# 🌟 Exercise 2: Dogs
-# Your code here
-
 class Dog:
   def __init__(self, name: str, age: int, weight: float):
     self.name = name
