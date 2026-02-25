@@ -1,3 +1,39 @@
+#
+#====================================
+#   Daily Challenge: Text Analysis
+#====================================
+#Instructions:
+# Create a Text class to analyze text data, either from a string or a file. Then, create a TextModification class to perform text cleaning.
+#------------------------------------
+# Part I: Analyzing a Simple String
+#------------------------------------
+# Step 1: Create the Text Class
+
+# Step 2: Implement word_frequency Method
+
+# Step 3: Implement most_common_word Method
+
+# Step 4: Implement unique_words Method
+#-------------------------------------
+# Part II: Analyzing Text from a File
+#-------------------------------------
+# Step 5: Implement from_file Class Method
+
+#-------------------------------------
+# Bonus: Text Modification
+#-------------------------------------
+# Step 6: Create the TextModification Class
+
+# Step 7: Implement remove_punctuation Method
+
+# Step 8: Implement remove_stop_words Method
+
+# Step 9: Implement remove_special_characters Method
+
+
+
+
+
 
 import string
 import re
