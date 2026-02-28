@@ -34,7 +34,7 @@ class AnagramChecker:
     
          
 # Temporary test at the bottom of anagram_checker.py
-if __name__ == "__main__":
-    checker = AnagramChecker()
-    print(f"Is 'meat' valid? {checker.is_valid_word('meat')}")
-    print(f"Anagrams of 'meat': {checker.get_anagrams('meat')}")
+# if __name__ == "__main__":
+#     checker = AnagramChecker()
+#     print(f"Is 'meat' valid? {checker.is_valid_word('meat')}")
+#     print(f"Anagrams of 'meat': {checker.get_anagrams('meat')}")
