@@ -287,4 +287,3 @@ for age_str in age_strings:
         print(f"Age {age} is restricted and removed.")
 
 print(f"\nFinal list of attendees: {allowed_attendees}")
-
