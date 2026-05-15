@@ -1,3 +1,7 @@
+
+##Exercise 3 : Scrape Dynamic Content from Rotten Tomatoes
+
+
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
