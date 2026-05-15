@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Page</title>
+</head>
+<body>
+    <h1 id="main-title">Movie Recommendations</h1>
+<button id="update-btn">Click to Update Title</button>
+
+<script>
+    const title = document.getElementById('main-title');
+    const button = document.getElementById('update-btn');
+
+    button.addEventListener('click', () => {
+        title.innerText = "Top Rated Movies of 2026";
+        title.style.color = "#fa320a"; 
+    });
+</script>
+</body>
+</html>
